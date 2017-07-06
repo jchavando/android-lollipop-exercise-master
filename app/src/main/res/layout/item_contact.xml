@@ -19,7 +19,9 @@
             android:id="@+id/ivProfile"
             android:layout_width="match_parent"
             android:layout_height="@dimen/grid_profile_height"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <RelativeLayout
             android:layout_alignParentBottom="true"

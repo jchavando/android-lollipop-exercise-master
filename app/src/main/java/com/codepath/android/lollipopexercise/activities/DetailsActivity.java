@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.codepath.android.lollipopexercise.R;
 import com.codepath.android.lollipopexercise.models.Contact;
-
 import org.parceler.Parcels;
 
 public class DetailsActivity extends AppCompatActivity {
@@ -33,7 +32,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Extract contact from bundle
         //mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
-        mContact = (Contact) Parcels.unwrap (getIntent().getParcelableExtra(Contact.class.getSimpleName()));
+        mContact = (Contact) Parcels.unwrap(getIntent().getParcelableExtra(EXTRA_CONTACT));
 
         // Fill views with data
         Glide.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).centerCrop().into(ivProfile);

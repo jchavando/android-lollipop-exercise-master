@@ -73,6 +73,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
                 @Override
                 public void onClick(View v) {
                     final Contact contact = (Contact)v.getTag();
+
                     if (contact != null) {
                         // Fire an intent when a contact is selected
                         // Pass contact object in the bundle and populate details activity.
